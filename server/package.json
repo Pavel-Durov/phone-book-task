@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "DB_FILE=./data/test.db.json mocha",
+    "lint": "eslint .",
+    "start": "DB_FILE=./data/db.json node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "cors": "^2.8.5",
+    "csvtojson": "2.0.8",
+    "express": "4.16.4",
+    "generate-safe-id": "1.0.2",
+    "lowdb": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "5.9.0",
+    "mocha": "5.2.0"
+  }
+}
